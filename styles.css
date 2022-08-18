@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    background: #E9ECF8;
+}
+
+main{
+    width: 100%;
+}
+
+header{
+    display: inline-block;
+    position: absolute;
+}
+
+.logo{
+    margin: 20px 0 0 20px;
+
+}
+
+section{
+    display: inline-block;
+}
+
+.texto{
+    width: 70%;
+    vertical-align: top;
+    margin-top: 80px;
+}
+
+#entrada-texto{
+    font-size: 28px;
+    color: #0A3871;
+    margin: 20px 0 150px;
+    transition: 200ms;
+    background: #E9ECF8;
+    resize: none;
+    width: 70%;
+    height: 250px;
+}
+
+#entrada-texto:focus{
+    outline: none;
+}
+
+#entrada-texto::placeholder{
+    font-size: 28px;
+    color: #0A3871;
+}
+
+.texto p{
+    font-size: 12px;
+    color: #495057;
+    margin-bottom: 5px;
+}
+
+.botones, #entrada-texto{
+    margin-left: 240px;
+}
+
+#encrip{
+    padding: 10px 50px;
+    background: #0A3871;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+
+#encrip:hover{
+    background: #012652;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#desencrip{
+    padding: 10px 39px;
+    background: #D8DFE8;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid #0A3871;
+    transition: 0.4s;
+}
+
+#desencrip:hover{
+    background: #0A3871;
+    transform: scale(1.1);
+    transition: 0.4s;
+    cursor: pointer;
+    color: white;
+}
+
+/*Imagen al cargar la página*/
+.texto-encriptado{
+    width: 20%;
+    height: 570px;
+    background: white;
+    border-radius: 35px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-encrip{
+    margin: 107px 0 32px 0;
+    width: 75%;
+}
+
+#imagen-encriptado{
+    display: block;
+}
+
+#texto-final{
+    display: none;
+}
+
+.txt-resultado h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/*Campo de texto con el mensaje encriptado/desencriptado*/
+#texto-final{
+    padding: 8% 0;
+}
+
+#encriptador{
+    width: 85%;
+    height: 400px;
+    font-size: 20px;
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+}
+
+#encriptador:focus{
+    outline: none;
+}
+
+#copiar{
+    color: #0A3871;
+    font-size: 18px;
+    background: white;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    width: 80%;
+    padding: 1em 0;
+    margin-top: 40px;
+    transition: 400ms;
+}
+
+#copiar:hover{
+    background: #0A3871;
+    transition: 400ms;
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="src/Logo.png" class="logo">
+        </header>
+        <section class="texto">
+            <form>
+                <textarea name="entrada" id="entrada-texto" placeholder="Ingrese texto aquí"></textarea>
+                <div class="botones">
+                    <p>🛈 Solo letras minúsculas y sin acentos</p>
+                    <input type="button" value="Encriptar" id="encrip" onclick="encriptarTexto()">
+                    <input type="button" value="Desencriptar" id="desencrip" onclick="desencriptarTexto()">
+                </div>
+            </form>
+        </section>
+        <section class="texto-encriptado">
+            <!--Imagen al cargar la página-->
+            <div id="imagen-encriptado">
+                <img src="src/Muñeco.png" class="img-encrip">
+                <div class="txt-resultado">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <h3>Ingresa el texto que desees encriptar o desencriptar</h3>
+                </div>
+            </div>
+            <!--Área con el mensaje encriptado/desencriptado-->
+            <div id="texto-final">
+                <textarea name="encriptador" readonly id="encriptador">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum maiores saepe obcaecati quos hic et optio, ipsam eaque illo aspernatur dolore amet voluptatum placeat, blanditiis molestias vitae necessitatibus a ex.</textarea>
+                <button id="copiar" onclick="copy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
