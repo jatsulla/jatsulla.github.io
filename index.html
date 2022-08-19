@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <title>Encriptador</title>
@@ -9,13 +10,15 @@
 <body>
     <main>
         <header>
-            <img src="src/Logo.png" class="logo">
+            <a href="index.html">
+                <img src="src/Logo.png" class="logo">
+            </a>
         </header>
         <section class="texto">
             <form>
                 <textarea name="entrada" id="entrada-texto" placeholder="Ingrese texto aquí"></textarea>
+                <p class="info">🛈 Solo letras minúsculas y sin acentos</p>
                 <div class="botones">
-                    <p>🛈 Solo letras minúsculas y sin acentos</p>
                     <input type="button" value="Encriptar" id="encrip" onclick="encriptarTexto()">
                     <input type="button" value="Desencriptar" id="desencrip" onclick="desencriptarTexto()">
                 </div>
@@ -32,7 +35,7 @@
             </div>
             <!--Área con el mensaje encriptado/desencriptado-->
             <div id="texto-final">
-                <textarea name="encriptador" readonly id="encriptador">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum maiores saepe obcaecati quos hic et optio, ipsam eaque illo aspernatur dolore amet voluptatum placeat, blanditiis molestias vitae necessitatibus a ex.</textarea>
+                <textarea name="encriptador" readonly id="encriptador"></textarea>
                 <button id="copiar" onclick="copy()">Copiar</button>
             </div>
         </section>
