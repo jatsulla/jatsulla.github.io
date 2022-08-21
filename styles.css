@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #E9ECF8;
+    background: linear-gradient(#c50000,#610000);
 }
 
 main{
@@ -37,10 +37,10 @@ section{
 
 #entrada-texto{
     font-size: 28px;
-    color: #0A3871;
+    color: rgb(209, 207, 207);
     margin: 20px 0 150px;
     transition: 200ms;
-    background: #E9ECF8;
+    background: transparent;
     resize: none;
     width: 70%;
     height: 250px;
@@ -52,12 +52,12 @@ section{
 
 #entrada-texto::placeholder{
     font-size: 28px;
-    color: #0A3871;
+    color: white;
 }
 
 .info{
     font-size: 14px;
-    color: #495057;
+    color: white;
     margin-bottom: 5px;
     margin-left: 240px;
 }
@@ -68,7 +68,7 @@ section{
 
 #encrip{
     padding: 10px 50px;
-    background: #0A3871;
+    background: linear-gradient(90deg,#0d3b74,#083366);
     color: white;
     border-radius: 10px;
     margin-right: 10px;
@@ -76,7 +76,7 @@ section{
 }
 
 #encrip:hover{
-    background: #012652;
+    background: linear-gradient(90deg,#0b2e5a,#06264e);
     transform: scale(1.1);
     cursor: pointer;
     transition: 0.4s;
@@ -87,12 +87,12 @@ section{
     background: #D8DFE8;
     color: black;
     border-radius: 10px;
-    border: 1px solid #0A3871;
+    border: 1px solid #082a53;
     transition: 0.4s;
 }
 
 #desencrip:hover{
-    background: #0A3871;
+    background: linear-gradient(90deg,#0d3b74,#083366);
     transform: scale(1.1);
     transition: 0.4s;
     cursor: pointer;
@@ -103,7 +103,7 @@ section{
 .texto-encriptado{
     width: 20%;
     height: 570px;
-    background: white;
+    background: linear-gradient(rgb(252, 250, 250),rgb(230, 230, 230));
     border-radius: 35px;
     text-align: center;
     margin-top: 20px;
@@ -141,6 +141,7 @@ section{
     border-radius: 10px;
     resize: none;
     padding: 10px;
+    background: transparent;
 }
 
 #encriptador:focus{
@@ -148,9 +149,9 @@ section{
 }
 
 #copiar{
-    color: #0A3871;
+    color: white;
     font-size: 18px;
-    background: white;
+    background: linear-gradient(90deg,#004faf,#00377a);
     border: 1px solid #0A3871;
     border-radius: 10px;
     width: 80%;
@@ -164,6 +165,25 @@ section{
     transition: 400ms;
     cursor: pointer;
     color: white;
+}
+
+/*footer*/
+footer{
+    background: linear-gradient(#740000,rgb(7, 7, 7),rgb(5, 5, 5),black);
+    margin-top: 25px;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+.copyright{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.redes-sociales{
+    color: white;
+    font-size: 30px;
+    margin: 5px;
 }
 
 /*Modificaciones para tablet de máximo 820px*/
@@ -218,7 +238,7 @@ section{
     .texto-encriptado{
         width: 80%;
         height: auto;
-        margin: 5%;
+        margin: 10% 5%;
         padding: 5%;
     }
 
