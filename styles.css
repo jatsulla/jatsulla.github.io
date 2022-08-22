@@ -1,41 +1,40 @@
-*{
+* {
     margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-body{
-    background: linear-gradient(#c50000,#610000);
+body {
+    background: linear-gradient(#c50000, #610000);
 }
 
-main{
+main {
     width: 100%;
 }
 
-header{
+header {
     display: inline-block;
     position: absolute;
 }
 
-.logo{
+.logo {
     margin: 20px 0 0 20px;
-
 }
 
-section{
+section {
     display: inline-block;
 }
 
-.texto{
+.texto {
     width: 70%;
     vertical-align: top;
     margin-top: 80px;
 }
 
-#entrada-texto{
+#entrada-texto {
     font-size: 28px;
     color: rgb(209, 207, 207);
     margin: 20px 0 150px;
@@ -46,43 +45,44 @@ section{
     height: 250px;
 }
 
-#entrada-texto:focus{
+#entrada-texto:focus {
     outline: none;
 }
 
-#entrada-texto::placeholder{
+#entrada-texto::placeholder {
     font-size: 28px;
     color: white;
 }
 
-.info{
+.info {
     font-size: 14px;
     color: white;
     margin-bottom: 5px;
     margin-left: 240px;
 }
 
-.botones, #entrada-texto{
+.botones,
+#entrada-texto {
     margin-left: 240px;
 }
 
-#encrip{
+#encrip {
     padding: 10px 50px;
-    background: linear-gradient(90deg,#0d3b74,#083366);
+    background: linear-gradient(90deg, #0d3b74, #083366);
     color: white;
     border-radius: 10px;
     margin-right: 10px;
     transition: 0.4s;
 }
 
-#encrip:hover{
-    background: linear-gradient(90deg,#0b2e5a,#06264e);
+#encrip:hover {
+    background: linear-gradient(90deg, #0b2e5a, #06264e);
     transform: scale(1.1);
     cursor: pointer;
     transition: 0.4s;
 }
 
-#desencrip{
+#desencrip {
     padding: 10px 39px;
     background: #D8DFE8;
     color: black;
@@ -91,50 +91,54 @@ section{
     transition: 0.4s;
 }
 
-#desencrip:hover{
-    background: linear-gradient(90deg,#0d3b74,#083366);
+#desencrip:hover {
+    background: linear-gradient(90deg, #0d3b74, #083366);
     transform: scale(1.1);
     transition: 0.4s;
     cursor: pointer;
     color: white;
 }
 
+
 /*Imagen al cargar la página*/
-.texto-encriptado{
+
+.texto-encriptado {
     width: 20%;
     height: 570px;
-    background: linear-gradient(rgb(252, 250, 250),rgb(230, 230, 230));
+    background: linear-gradient(rgb(252, 250, 250), rgb(230, 230, 230));
     border-radius: 35px;
     text-align: center;
     margin-top: 20px;
     box-shadow: 0px 0px 10px rgb(170, 169, 169);
 }
 
-.img-encrip{
+.img-encrip {
     margin: 107px 0 32px 0;
     width: 75%;
 }
 
-#imagen-encriptado{
+#imagen-encriptado {
     display: block;
 }
 
-#texto-final{
+#texto-final {
     display: none;
 }
 
-.txt-resultado h2{
+.txt-resultado h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 16px;
 }
 
+
 /*Campo de texto con el mensaje encriptado/desencriptado*/
-#texto-final{
+
+#texto-final {
     padding: 8% 0;
 }
 
-#encriptador{
+#encriptador {
     width: 85%;
     height: 400px;
     font-size: 20px;
@@ -144,14 +148,14 @@ section{
     background: transparent;
 }
 
-#encriptador:focus{
+#encriptador:focus {
     outline: none;
 }
 
-#copiar{
+#copiar {
     color: white;
     font-size: 18px;
-    background: linear-gradient(90deg,#004faf,#00377a);
+    background: linear-gradient(90deg, #004faf, #00377a);
     border: 1px solid #0A3871;
     border-radius: 10px;
     width: 80%;
@@ -160,114 +164,174 @@ section{
     transition: 400ms;
 }
 
-#copiar:hover{
+#copiar:hover {
     background: #0A3871;
     transition: 400ms;
     cursor: pointer;
     color: white;
 }
 
+
 /*footer*/
-footer{
-    background: linear-gradient(#740000,rgb(7, 7, 7),rgb(5, 5, 5),black);
+
+footer {
+    background: linear-gradient(#740000, rgb(7, 7, 7), rgb(5, 5, 5), black);
     margin-top: 25px;
     padding: 40px 0 20px 0;
     text-align: center;
 }
 
-.copyright{
+.copyright {
     color: white;
     margin-bottom: 10px;
 }
 
-.redes-sociales{
+.redes-sociales {
     color: white;
     font-size: 30px;
     margin: 5px;
 }
 
+
 /*Modificaciones para tablet de máximo 820px*/
+
 @media screen and (max-width:820px) {
-    .logo{
+    .logo {
         margin: 0;
     }
-
-    section{
+    section {
         display: block;
     }
-
-    .texto{
+    .texto {
         width: 100%;
         margin-top: 5%;
     }
-    
-    #entrada-texto{
+    #entrada-texto {
         margin: 20% 5% 5% 5%;
         width: 90%;
         font-size: 34px;
         height: 400px;
     }
-
-    #entrada-texto::placeholder{
+    #entrada-texto::placeholder {
         font-size: 34px;
     }
-
-    .info{
+    .info {
         font-size: 18px;
         margin: 0 5% 1%;
     }
-
-    .botones{
+    .botones {
         width: 90%;
         margin: 0 5%;
     }
-
-    #encrip{
+    #encrip {
         font-size: 24px;
         padding: 2.5% 17.5%;
         border-radius: 20px;
-        margin-right:5%;
+        margin-right: 5%;
     }
-
-    #desencrip{
+    #desencrip {
         font-size: 24px;
         padding: 2.5% 15%;
         border-radius: 20px;
     }
-
-    .texto-encriptado{
+    .texto-encriptado {
         width: 80%;
         height: auto;
         margin: 10% 5%;
         padding: 5%;
     }
-
     /*Parte inicial del apartado encriptado al cargar la página*/
-    .img-encrip{
+    .img-encrip {
         display: none;
     }
-
-    .txt-resultado h2{
+    .txt-resultado h2 {
         font-size: 32px;
     }
-
-    .txt-resultado h3{
+    .txt-resultado h3 {
         font-size: 22px;
     }
-
     /*Cambio del apartado encriptado al presionar alguno de los botones*/
-    #texto-final{
+    #texto-final {
         padding: 0;
     }
-
-    #encriptador{
+    #encriptador {
         width: 100%;
         height: 200px;
         padding: 0;
         font-size: 34px;
     }
+    #copiar {
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
 
-    #copiar{
+@media screen and (max-width:412px) {
+    .logo {
+        margin: 0;
+    }
+    section {
+        display: block;
+    }
+    .texto {
+        width: 100%;
+        margin-top: 5%;
+    }
+    #entrada-texto {
+        margin: 20% 5% 5% 5%;
+        width: 90%;
+        font-size: 34px;
+        height: 400px;
+    }
+    #entrada-texto::placeholder {
+        font-size: 34px;
+    }
+    .info {
+        font-size: 18px;
+        margin: 0 5% 3%;
+    }
+    .botones {
+        width: 90%;
+        margin: 0 5%;
+    }
+    #encrip {
+        font-size: 20px;
+        padding: 2.5% 13%;
+        border-radius: 20px;
+        margin-right: 5%;
+    }
+    #desencrip {
+        font-size: 20px;
+        padding: 2.5% 9%;
+        border-radius: 20px;
+    }
+    .texto-encriptado {
+        width: 80%;
+        height: auto;
+        margin: 10% 5%;
+        padding: 5%;
+    }
+    /*Parte inicial del apartado encriptado al cargar la página*/
+    .img-encrip {
+        display: none;
+    }
+    .txt-resultado h2 {
+        font-size: 32px;
+    }
+    .txt-resultado h3 {
+        font-size: 22px;
+    }
+    /*Cambio del apartado encriptado al presionar alguno de los botones*/
+    #texto-final {
+        padding: 0;
+    }
+    #encriptador {
+        width: 100%;
+        height: 200px;
+        padding: 0;
+        font-size: 34px;
+    }
+    #copiar {
         font-size: 28px;
         font-weight: bold;
     }
